@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  get "calculators/index"
-  get "calculators/new"
-  get "calculators/show"
-  get "calculators/create"
-  get "calculators/edit"
-  get "calculators/update"
-  get "calculators/destroy"
+  root "calculators#new"
+
+  resources :calculators
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
