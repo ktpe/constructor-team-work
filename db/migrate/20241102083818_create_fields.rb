@@ -5,6 +5,8 @@ class CreateFields < ActiveRecord::Migration[7.2]
       t.string :var_name
       t.string :field_type
 
+      t.references :calculator, null: false
+
       t.timestamps
     end
   end

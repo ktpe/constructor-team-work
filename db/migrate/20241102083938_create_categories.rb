@@ -4,6 +4,8 @@ class CreateCategories < ActiveRecord::Migration[7.2]
       t.string :name
       t.float :price
 
+      t.references :field
+
       t.timestamps
     end
   end
